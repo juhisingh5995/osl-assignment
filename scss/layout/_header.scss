@@ -1,0 +1,100 @@
+.navbar-section {
+    position: relative;
+    z-index: 1;
+
+    .navbar {
+        display: flex;
+        padding-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-icon {
+            padding-bottom: 98px;
+
+            @media (min-width: 768px) {
+                margin-top: 6px;
+                padding-bottom: 12px;
+            }
+
+            img {
+                width: 100px;
+                transform: rotate(-16deg);
+                padding-bottom: 10px;
+            }
+        }
+
+        .navbar-menu {
+
+            .navbar-wrapper {
+                list-style: none;
+                font-weight: bold;
+                text-align: right;
+
+                @media (min-width: 992px) {
+                    display: flex;
+                    gap: 24px;
+
+                }
+
+                li {
+                    position: relative;
+                    padding-bottom: 12px;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-family: $secondary-family;
+                        font-size: 18px;
+                        padding-left: 16px;
+
+                        @media (min-width: 768px) {
+                            color: black;
+
+                        }
+
+                        // @media (max-width: 1199.98px) {
+                        //     &::after {
+                        //         content: "";
+                        //         position: absolute;
+                        //         background-color: white;
+                        //         width: 2.5rem;
+                        //         height: 1px;
+                        //         top: 10px;
+                        //     }
+                        // }
+                    }
+
+                }
+            }
+
+
+            li:last-child {
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: red;
+                    width: 2.5rem;
+                    height: 1px;
+                    left: 84px;
+                    top: 10px;
+                }
+            }
+
+            li:last-child a {
+                padding-left: 132px;
+                color: red;
+            }
+
+            .nav li:last-child {
+                padding-left: 38px;
+
+                @media (min-width: 768px) {
+                    padding-left: 45px;
+                    margin-left: 58px;
+                }
+            }
+
+        }
+    }
+}

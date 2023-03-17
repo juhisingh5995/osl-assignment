@@ -1,0 +1,49 @@
+.migration-section {
+    padding-top: 120px;
+  padding-bottom:120px;
+    .migration-heading {
+        h3 {
+            margin-top: -68px;
+        }
+    }
+    .migration-content{
+        @media (min-width: 992px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        @media (min-width: 768px) {
+            gap:12px;
+            display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .migration-wrapper{
+            padding-top:60px;
+            @media (min-width: 768px) {
+            padding-top: 113px;
+            max-width: 272px;
+            }
+            h1{
+                font-size: 26px;
+                text-align: left;
+                padding-bottom: 30px;
+                font-family:$secondary-family;
+                @media (min-width: 768px) {
+                    font-size: 24px;
+                }
+
+            }
+            p{
+               font-size:24px;
+               text-align: left;
+               padding-bottom: 26px; 
+               line-height: 1.5;
+               font-family:$secondary-family;
+               @media (min-width: 768px) {
+                font-size: 18px;
+            }
+            }
+        }
+    }
+}

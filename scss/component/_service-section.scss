@@ -1,0 +1,48 @@
+.service-grid {
+  background: url(../image/sunset-1373171__480.webp);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .service-box {
+    display: block;
+    @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 1fr 150px;
+    }
+    .box-item {
+      border: 0.5px solid lightgray;
+      padding: 56px;
+      height: 300px;
+      
+      &.box-2 {
+        font-size: 48px;
+        text-align: left;
+        padding-top: 120px;
+        color: white;
+      }
+      &.box-1{
+        display: none;
+        @media (min-width: 1200px) {
+            display: block;
+        }
+      }
+      &.box {
+        h1 {
+          color: #faaf41;
+          font-size: 24px;
+          text-align: left;
+          font-family: $secondary-family;
+          padding-bottom: 22px;
+        }
+        p {
+            color:white;
+            font-size: 18px;
+            font-family: $secondary-family;
+
+
+        }
+      }
+    }
+  }
+}

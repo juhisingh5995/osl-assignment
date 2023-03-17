@@ -1,0 +1,29 @@
+.banner-image {
+    position: absolute;
+    top: 0;
+
+    @media (min-width: 768px) {
+        position: unset;
+        padding-top:48px;
+    }
+
+    .container {
+        padding: 0;  
+        @media (min-width: 992px) {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0px 144px;
+        }
+    }
+
+    img {
+        height: 100%;
+        width:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-width: 768px) {
+           height: 336px;
+        }
+    }
+}

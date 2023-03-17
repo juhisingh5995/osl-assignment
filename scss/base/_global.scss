@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  padding: 0 17px;
+
+  @media (min-width: 1200px) {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0px 144px;
+  }
+}
+
+.top-background {
+  color: #ebf0f0;
+}
+
+// text decoration
+h3 {
+  color: black;
+  font-size: 38px;
+  text-align: left;
+  font-weight: bold;
+  &:hover {
+    color: red;
+  }
+  @media (min-width: 768px) {
+    font-size: 45px;
+  }
+}
+
+.design-text {
+  font-size: 38px;
+  text-align: left;
+  font-weight: 800;
+  font-family: "Proxima Nova", sans-serif;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #707070;
+  &:hover {
+    color: #faaf41;
+  }
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+.hidden-mobile {
+  display: none;
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+.circle{
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  background-color:#e14b32;
+  margin-left: -44px;
+}
+.triangle-1{
+      border-right: 2.25rem solid rgba(0, 0, 0, 0);
+      border-bottom: 2.25rem solid #DF4E31;
+          @media (min-width: 768px) {
+        width: 0;
+      
+      }
+      &.modernization-triangle{
+        width:10px;
+        border-bottom: 2.25rem solid #FAAF40;
+        position: absolute;
+        left: 80%;
+        @media (min-width: 768px) {
+          border-bottom: 2.25rem solid #DF4E31;
+          margin-top: 253px;
+        }
+    }
+    }
+      .triangle-2{
+        transform: rotate(270deg);
+        border-right: 2.25rem solid rgba(0, 0, 0, 0);
+        border-bottom: 2.25rem solid #3787C8;
+        margin-left: -22px;
+            @media (min-width: 768px) {
+          width: 0;
+        
+        }
+    
+}
+.square {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  position: relative;
+  bottom: 230px;
+  left: 84%;
+  @media (min-width: 768px) {
+    bottom: 230px;
+    left: 75%;
+  }
+}
+
+
+.square::after {
+  content: "";
+  height: 40px;
+  width: 3px;
+  position: absolute;
+  left: 47%;
+  right: 50%;
+  background-color: white;
+  transform: rotate(47deg);
+}
+.line{
+  background-color: red;
+  width: 64px;
+  height: 1px;
+  
+}

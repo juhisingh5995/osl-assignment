@@ -1,0 +1,59 @@
+.development-section {
+    background-color: #EBF0F0;
+    padding-top: 100px;
+    padding-bottom: 66px;
+
+    .development-heading {
+        position: relative;
+
+        @media (min-width: 768px) {
+            padding: 0 100px;
+        }
+
+        h3 {
+            padding-bottom: 22px;
+        }
+
+        h2 {
+            font-size: 18px;
+            position: relative;
+            text-align: left;
+            padding-bottom: 22px;
+            font-family: $secondary-family;
+            font-weight: 500;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: red;
+                width: 3.5rem;
+                height: 2px;
+                left: 264px;
+                top: 8px;
+
+            }
+
+        }
+
+        .square {
+            bottom: 12px;
+            left: 0;
+
+            @media (min-width: 768px) {
+                bottom: 0
+            }
+        }
+
+        .triangle-1 {
+            width: 10px;
+            border-bottom: 2.25rem solid #FAAF41;
+            position: absolute;
+            top: 44px;
+            left: 82%;
+
+            @media (min-width: 768px) {
+                left: 92%;
+            }
+        }
+    }
+}

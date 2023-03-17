@@ -1,0 +1,93 @@
+.team-leader {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  .team-intro {
+    @media (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-body {
+      padding: 18px;
+
+      @media (min-width: 576px) {
+        border-left: 1px solid #a5a5a5;
+      }
+      &:first-child {
+        @media (min-width: 576px) {
+          border-left: 1px solid white;
+        }
+      }
+
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+
+      h2 {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 22px;
+        text-align: left;
+        font-family: $secondary-family;
+      }
+
+      .card-body-image {
+        .small-circle {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: #3787c8;
+
+          &.red {
+            background: #e14b32 !important;
+          }
+
+          &.yellow {
+            background: #faaf41 !important;
+          }
+        }
+
+        img {
+          width: 224px;
+          height: 224px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        text-align: left;
+        padding-top: 40px;
+        padding-bottom: 27px;
+        font-family: $secondary-family;
+      }
+
+      .card-body-social-icon {
+        text-align: left;
+
+        a {
+          font-size: 16px;
+          padding-bottom: 22px;
+          font-family: $secondary-family;
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: red;
+            width: 2.5rem;
+            height: 1px;
+            left: 102px;
+            bottom: 32px;
+          }
+        }
+      }
+    }
+  }
+}

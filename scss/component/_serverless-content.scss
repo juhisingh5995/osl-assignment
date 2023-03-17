@@ -1,0 +1,58 @@
+.hero-section {
+  position: relative;
+  top: 153px;
+  padding-bottom:100px;
+  @media (min-width: 768px) {
+    position: unset;
+    padding-top: 100px;
+  }
+  .serverless {
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+      .serverless-wrapper{
+          @media (min-width: 768px) {
+            max-width: 50%;
+          }
+      }
+    .serverless-text {
+        @media (min-width: 768px) {
+            max-width:50%;
+        }
+      p {
+        font-size: 20px;
+        text-align: left;
+        color: black;
+        padding-top: 40px;
+        font-weight: 500;
+        line-height: 1.5;
+        font-family: $secondary-family;
+        padding-bottom: 24px;
+        @media (min-width: 768px) {
+          font-size: 18px;
+          padding-bottom: 26px;
+        }
+      }
+      h2 {
+        text-align: left;
+        font-size: 18px;
+        padding-bottom: 22px;
+        color: black;
+        font-family: $secondary-family;
+        font-weight: 500;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: red;
+          width: 2.5rem;
+          height: 1px;
+          left: 130px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}
